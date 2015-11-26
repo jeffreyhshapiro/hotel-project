@@ -5,10 +5,8 @@
 <title>Hotel Project</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<style type="text/css">
-</style>
+<link rel="stylesheet" href="hotel-project.css">
+
 </head>
 <body>
 <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
@@ -30,7 +28,49 @@
                 <li><a href="http://www.canoe.com/about-us.php" target="_blank">About</a></li>
                 <li><a href="http://www.canoe.com/contact-us.php" target="_blank">Contact</a></li>
             </ul>
-        </div>
+        <form>
+            <!--Default buttons with dropdown menu-->
+            <div class="btn-group nav-btns">
+                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Star Rating<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Any Star Rating</a></li>
+                    <li><a href="#">2 Stars and up</a></li>
+                    <li><a href="#">3 Stars and up</a></li>
+                    <li><a href="#">4 Stars and up</a></li>
+                    <li><a href="#">5 stars</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <!--Primary buttons with dropdown menu-->
+            <div class="btn-group nav-btns">
+                <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Price<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Any price</a></li>
+                    <li><a href="#">$100/night and up</a></li>
+                    <li><a href="#">$200/night and up</a></li>
+                    <li><a href="#">$300/night and up</a></li>
+                    <li><a href="#">$400/night and up</a></li>
+                    <li><a href="#">$500/night and up</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <!--Info buttons with dropdown menu-->
+            <div class="btn-group nav-btns">
+                <button type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle">Guest Rating<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Any Guest Rating</a></li>
+                    <li><a href="#">Okay</a></li>
+                    <li><a href="#">Pretty good</a></li>
+                    <li><a href="#">Good</a></li>
+                    <li><a href="#">Excellent</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+          </form>            
+        </div>      
     </div>
 </nav>
 <div class="container">
@@ -111,5 +151,7 @@
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>                                
