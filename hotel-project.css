@@ -14,3 +14,12 @@
 .modal-body {
   height: 500px;
 }
+
+.full-w {
+  width: 100%;
+}
+
+#myCarousel {
+  height: 277px;
+  overflow-y: hidden;
+}

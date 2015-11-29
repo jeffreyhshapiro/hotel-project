@@ -1,0 +1,16 @@
+img {
+  height: 120px;
+  width: 150px;
+  max-height: 200px;
+  max-width: 200px;
+  vertical-align: center;
+}
+
+.panel-default {
+  background-color: #F5F5DC; 
+}
+
+.rating {
+  text-align: center;
+  color: #FF8C00;
+}
