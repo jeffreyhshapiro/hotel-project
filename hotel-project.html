@@ -43,9 +43,9 @@
     <div class="container">
         <div class="col-md-12 col-xs-12 col-sm-12">
             <div class="row">
-                <form class="form-inline">
+                <form class="form-inline" action="hotel-layout.html" method="post">
                     <div class="col-md-3 col-sm-3 form-group">
-                        <input id="city" placeholder = "Where to?" class="dropdown dropdown-toggle" data-toggle="dropdown">
+                        <input id="city" placeholder = "Where to?" class="dropdown dropdown-toggle" data-toggle="dropdown" class="required">
                           <ul class="dropdown-menu">
                             <li><a href="#">New York, NY</a></li>
                             <li><a href="#">Philadelphia, PA</a></li>
@@ -58,23 +58,38 @@
                             <li><a href="#">Mumbai</a></li>
                             <li><a href="#">Vienna</a></li>
                           </ul>
+                        <p>Not sure yet where your travel destination is? Search major metropolitan cities across the globe here.</p>
+                        <input id="amenities" placeholder = "Amenities?">
                     </div>
                     <div class="col-md-3 col-sm-3 form-group">
                         <input id="date" class="datepicker" placeholder = "When?">
+                        <p>When will you be departing?</p>
+                        <br>
+                        <br>
+                        <br>
+                        <input id="price" placeholder = "Filter by price">
                     </div>
                     <div class="col-md-3 col-sm-3 form-group">
-                        <input id="date-return" class="datepicker" placeholder = "Return date">
+                        <input id="date-return" class="datepicker" placeholder = "Return date?">
+                        <p>When will you return?</p>
+                        <br>
+                        <br>
+                        <br>
+                        <input id="star-rating" placeholder = "Filter by star rating">
                     </div>
                     <div class="col-md-3 col-sm-3 form-group">
-                        <button class="btn btn-success">Search</button>
+                        <a href="hotel-layout.html" class="btn btn-success" type="submit" id="submit-button">Search</a><br>
+                        <small><a href="#" id="advanced-search">Advanced search</a></small>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
-
-
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <!--
         <div class="col-sm-6 col-md-4 col-lg-2">
             <h2>City Search</h2>

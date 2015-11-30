@@ -1,33 +1,28 @@
-var inputCodeDateIn = $("date-in");
-var inputCodeDateOut = $("date-out");
+$("document").ready(function() {
 
-$("#destination").click(function () {
-  alert("A list of cities will appear here");
-})
+  $("#date").pickadate()
+  $("#date-return").pickadate()
 
-$("#date").pickadate()
-$("#date-return").pickadate()
+  $("#amenities").hide()
+  $("#price").hide()
+  $("#star-rating").hide()
+  $("#advanced-search").click(function(){
+    $("#amenities").show();
+    $("#price").show();
+    $("#star-rating").show();
+  });
+
+  $("document").on("click","#submit-button", function(){
+    if ($("input").val() === "") {
+      alert("Please fill out the missing fields");
+    };
+  });
+
+});
 
 
 
-// Date picker for check in and check out functions in modal
-/*$("#date-in").on("click", function(){
-  $('.datepicker').pickadate({
-    selectYears: true,
-    selectMonths: true
-  $("#check-in").modal('show');
-  $('.datepicker').pickadate({
-    selectYears: true,
-    selectMonths: true
-  })
 
- $("#date-out").modal('show');
-  $(".modal-body").append(inputCodeDateOut);
-  $('.datepicker').pickadate({
-    selectYears: true,
-    selectMonths: true
-  })
-})*/
 
 
 

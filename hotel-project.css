@@ -23,3 +23,8 @@
   height: 277px;
   overflow-y: hidden;
 }
+
+input {
+  border-radius: 5px;
+  width: 100%;
+}
