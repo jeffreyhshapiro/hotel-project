@@ -34,8 +34,8 @@ $("document").ready(function() {
     $(".missingEntry").hide();
   };
 });
-
-
+//call dropdown buttons
+$('.dropdown-toggle').dropdown()
 
 
 
