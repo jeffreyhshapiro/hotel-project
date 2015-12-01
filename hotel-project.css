@@ -7,6 +7,25 @@
     margin: 0 auto; /* Align slide image horizontally center */
 }
 
+
 .bs-example{
   margin: 20px;
+}
+
+.modal-body {
+  height: 500px;
+}
+
+.full-w {
+  width: 100%;
+}
+
+#myCarousel {
+  height: 277px;
+  overflow-y: hidden;
+}
+
+input {
+  border-radius: 5px;
+  width: 100%;
 }

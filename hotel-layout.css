@@ -1,0 +1,24 @@
+img {
+  height: 120px;
+  width: 150px;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.photo {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.panel-default {
+  background-color: #F5F5DC; 
+}
+
+.rating {
+  text-align: center;
+  color: #FF8C00;
+}
+
+.modal-body {
+  background-color: #F5F5DC;
+}
