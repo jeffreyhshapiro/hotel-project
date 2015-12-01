@@ -5,9 +5,16 @@ $("document").ready(function(){
     return price
   });
 
-  $(".hideListing").click(function(){
-    $(this).hide();
+  $("#alogonquinHide").click(function(){
+    $("#alogonquinPanel").hide();
   })
 
+  $("#marriotHide").click(function(){
+    $("#marriotPanel").hide();
+  })
+
+  $("#highLineHide").click(function(){
+    $("#highLinePanel").hide();
+  })
 
 })

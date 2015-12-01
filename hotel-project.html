@@ -44,19 +44,11 @@
             <div class="row">
                 <form class="form-inline" action="hotel-layout.html" method="post">
                     <div class="col-md-3 col-sm-3 form-group">
-                        <input id="city" placeholder = "Where to?" class="dropdown dropdown-toggle" data-toggle="dropdown" class="required">
-                          <ul class="dropdown-menu">
+                        <input id="city" placeholder = "Where to?" class="required">
+                          <!--<ul class="dropdown-menu">
                             <li><a href="#">New York, NY</a></li>
                             <li><a href="#">Philadelphia, PA</a></li>
-                            <li><a href="#">Los Angeles, CA</a></li>
-                            <li><a href="#">San Francisco, CA</a></li>
-                            <li><a href="#">London</a></li>
-                            <li><a href="#">Paris</a></li>
-                            <li><a href="#">Tokyo</a></li>
-                            <li><a href="#">Shanghai</a></li>
-                            <li><a href="#">Mumbai</a></li>
-                            <li><a href="#">Vienna</a></li>
-                          </ul>
+                          </ul>-->
                         <p>Not sure yet where your travel destination is? Search major metropolitan cities across the globe here.</p>
                         <input id="amenities" placeholder = "Amenities?" class="dropdown dropdown-toggle" data-toggle="dropdown" class="required">
                             
@@ -99,85 +91,12 @@
                         <a href="hotel-layout.html" class="btn btn-success" type="submit" id="submit-button">Search</a><br>
                         <small><a href="#" id="advanced-search">Advanced search</a></small>
                     </div>
+                    <div class="missingEntry">Please input all criteria</div>
                 </form>
             </div>
         </div>
     </div>
     <br />
-    <div class="bs-example">
-    <form>
-        <!--Default buttons with dropdown menu-->
-        <div class="btn-group">
-            <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Star Rating<span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a href="#">Any Star Rating</a></li>
-                <li><a href="#">2 Stars and up</a></li>
-                <li><a href="#">3 Stars and up</a></li>
-                <li><a href="#">4 Stars and up</a></li>
-                <li><a href="#">5 stars</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-            </ul>
-        </div>
-        <!--Primary buttons with dropdown menu-->
-        <div class="btn-group">
-            <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Price<span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a href="#">Any price</a></li>
-                <li><a href="#">$100/night and up</a></li>
-                <li><a href="#">$200/night and up</a></li>
-                <li><a href="#">$300/night and up</a></li>
-                <li><a href="#">$400/night and up</a></li>
-                <li><a href="#">$500/night and up</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-            </ul>
-        </div>
-        <!--Info buttons with dropdown menu-->
-        <div class="btn-group">
-            <button type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle">Guest Rating<span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a href="#">Any Guest Rating</a></li>
-                <li><a href="#">Okay</a></li>
-                <li><a href="#">Pretty good</a></li>
-                <li><a href="#">Good</a></li>
-                <li><a href="#">Excellent</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-            </ul>
-        </div>
-      </form>
-    </div>  
-    <!--
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>City Search</h2>
-            <p>Not sure yet where your travel destination is? Search major metropolitan cities across the globe here.</p>
-            <p><a href="http://www.canoe.com/search/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>Check in and Check out</h2>
-            <p>Use our nifty datepicker to select your check in and check out dates.</p>
-            <button class="btn btn-success" data-toggle="modal" data-target="#check-in">Learn More</button>
-        </div>
-        <div class="clearfix visible-sm-block"></div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>Star Rating</h2>
-            <p>If you travel the way we do, you only want the best travel experience for your money. Thats why canoe.com does the hard work for you by categorizing all of our hotels by star ratings. Only staying for one night and you don't mind skimping? Go one star. Looking for a luxurious experience? Splurge on a 4 star rated hotel.</p>
-            <p><a href="http://www.canoe.com/star-rating/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-        <div class="clearfix visible-sm-block"></div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>Price</h2>
-            <p>Are you on a tight budget but you still want the best vacation possible? Use our search by price option to help you keep more dollars in your wallet.</p>
-            <p><a href="http://www.canoe.com/search-by-price/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>Amenities</h2>
-            <p>Are you the type of traveler that always likes to stay at a hotel with a swimming pool? Perhaps you don't care about the swimming pool, but you are in need of a hotel with state of the art gym facilities. We have you covered. Search for hotel amenities here.</p>
-            <p><a href="http://www.canoe.com/search-hotel-amenities/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-    </div>
-    -->
     <hr>
     <div class="row">
         <div class="col-sm-12">
@@ -229,32 +148,6 @@
         </div>
     </div>
 </div>
-
-<!--Modal for check in-->
-        <div class="modal fade" tabindex="-1" role="dialog" id="check-in">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <!--<h4 class="modal-title">Modal title</h4>-->
-              </div>
-              <div class="modal-body">
-                <div class="col-md-6">
-                    <p id="date-in">Check in</p>
-                    <input id="date-in" class="datepicker">
-                </div>
-                <div class="col-md-6">
-                    <p id="date-out">Check out</p>
-                    <input id="date-out" class="datepicker">
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

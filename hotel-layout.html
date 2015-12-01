@@ -37,8 +37,7 @@
 <!--Containers for hotel information-->
 <div class="container">
   <div class="col-md-12">
-    <div class="col-md-2">
-    </div>
+    <div class="col-md-2"></div>
     <div class="col-md-10">
       <div class="panel panel-default">
         <div class="panel-heading">Panel Header</div>
@@ -47,7 +46,7 @@
           </div>
         </div>
       </div>
-      <div class="panel panel-default">
+      <div class="panel panel-default" id="alogonquinPanel">
         <div class="panel-heading">Alogonquin Hotel, New York City<a href="#" class="pull-right" data-toggle="modal" data-target="#alogonquinNYC">More Info</a></div>
         <div class="panel-body">
           <div class="col-md-3 photo">
@@ -66,7 +65,7 @@
           </div>
         </div>
       </div>
-       <div class="panel panel-default">
+       <div class="panel panel-default" id="marriotPanel">
         <div class="panel-heading">New York Marriot Marquis, New York City<span><a href="#" class="pull-right" data-toggle="modal" data-target="#marriot">More Info</a></span></div>
         <div class="panel-body">
           <div class="col-md-3 photo">
@@ -90,7 +89,7 @@
           </div>
         </div>
       </div>
-       <div class="panel panel-default">
+       <div class="panel panel-default" id="highLinePanel">
         <div class="panel-heading">The Standard High Line, New York City<a href="#" class="pull-right" data-toggle="modal" data-target="#high-line">More Info</a></div>
         <div class="panel-body">
           <div class="col-md-3 photo">
@@ -140,7 +139,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-default hideListing" data-dismiss="modal">Hide this listing</button>
+        <button type="button" class="btn btn-default" id="alogonquinHide" data-dismiss="modal">Hide this listing</button>
       </div>
     </div>
   </div>
@@ -169,7 +168,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-default hideListing" data-dismiss="modal">Hide this listing</button>
+        <button type="button" class="btn btn-default" id="marriotHide" data-dismiss="modal">Hide this listing</button>
       </div>
     </div>
   </div>
@@ -198,7 +197,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-default hideListing" data-dismiss="modal">Hide this listing</button>
+        <button type="button" class="btn btn-default" id="highLineHide" data-dismiss="modal">Hide this listing</button>
       </div>
     </div>
   </div>
